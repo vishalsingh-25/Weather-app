@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+    max-height: 10%;
+    padding: .3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0
+                rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+nav h1{
+    font-size: 3rem;
+}
+
+nav span{
+    color: #784cfb;
+}
+
+.search-box{
+    width: 200px;
+    padding: 8px;
+    font-size: .8em;
+    border: none;
+    border-bottom: 2px white solid;
+    background: none;
+    color: #fff;
+    text-align: center;
+    opacity: .3;
+}
+
+.search-box:focus{
+    outline: none;
+    opacity: 1;
+    
+}
+
+.search-box::placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+button{
+    margin: 0 auto;
+    border: 2px solid #fff;
+    background: none;
+    font-size: .9rem;
+    color: #fff;
+    width: 100px;
+    padding: 3px 0;
+    border-radius: 15px;
+    opacity: .3;
+}
+
+button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+footer{
+    max-height: 10%;
+    min-height: 8vh;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0
+                rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-name{
+    color: #784cfb;
+}
+
+main{
+    min-height: 100vh;
+    background-image: url('background/snow.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.app-wrap{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    margin: 30px auto;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    margin-bottom: 2rem;
+}
+
+.temp{
+    font-size: 6rem;
+}
+
+.city{
+    font-size: 4rem;
+}
+
+.current{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon{
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 3px;
+}
+
+.pricip{
+    font-size: 2rem;
+}
+
+.panel-2{
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.info{
+    font-size: 1.5rem;
+}
+
+.info-icon{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.title{
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #784cfb;
+}
+
+.msg-box{
+    max-width: 600px;
+    margin:200px auto;
+    padding: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0
+                rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn{
+    font-size: 1.3rem;
+    opacity: 1;
+}
+
+.active{
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    nav{
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 10px;
+    }
+
+    .form{
+        display: grid;
+        gap: .3rem;
+    }
+
+    .app-wrap{
+        gap: 2.5rem;
+    }
+
+    .panel-2{
+        gap: 2rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .title::after{
+        height: 3px;
+    }
+
+    .info-icon{
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .msg-box{
+        margin-top: 150px;
+        max-width: 400px;
+        padding: 80px 10px;
+    }
+
+    .btn{
+        font-size: .9rem;
+    }
+    
+}
