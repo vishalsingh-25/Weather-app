@@ -236,6 +236,10 @@ section{
         font-size: 1.5rem;
     }
 
+    .info{
+        font-size: 1rem;
+    }
+
     .title::after{
         height: 3px;
     }
@@ -254,5 +258,43 @@ section{
     .btn{
         font-size: .9rem;
     }
+
+    .footer-name{
+        font-size: .7rem;
+    }
     
+}
+
+@media screen and (max-width: 400px) {
+
+    .app-wrap{
+        gap: 2.5rem;
+    }
+
+    .panel-2{
+        gap: 2rem;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .title::after{
+        height: 3px;
+    }
+
+    .info-icon{
+        max-width: 10px;
+        max-height: 10px;
+    }
+
+    .info{
+        font-size: .8rem;
+    }
+
+    .msg-box{
+        margin-top: 150px;
+        max-width: 350px;
+        padding: 80px 10px;
+    }
 }
