@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="img/icon/logo.png">
+</head>
+
+<body>
+    
+    <main class="main">
+        <nav>
+            <h1>Weather<span>.</span></h1>
+            <div>
+                <div class="form">
+                    <input type="text" class="search-box" autocomplete="off"
+                placeholder="search city name...">
+    
+                <button class="button">Search <i class="uil uil-arrow-right arrow"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="app-wrap active" id="app-wrap">
+            <section class="panel-1">
+                <div class="temp"></div>   
+
+                <div class="location">
+                        <h1 class="city"></h1>
+                        <div class="date"></div>
+                </div>                
+        
+                <div class="current">    
+                    <img class="icon" src="img/icon/13d.png" id="icon-img" alt="">
+                    <div class="pricip"></div>
+                    <div class="hi-low"></div>
+                </div>
+            </section>
+    
+            <section class="panel-2">
+                
+                    <div class="details">
+                        <div class="humidity info"></div>
+                        <h1 class="title">
+                            <img class="info-icon" src="img/icon/humidity.png"> Humidity
+                        </h1>
+                    </div>
+    
+                    <div class="details">
+                        <div class="pressure info"></div>
+                        <h1 class="title">
+                            <img class="info-icon" src="img/icon/pressure.png"> Pressure
+                        </h1>
+                    </div>
+    
+                    <div class="details">
+                        <div class="wind info"></div>
+                        <h1 class="title">
+                            <img class="info-icon" src="img/icon/wind.png"> Wind Speed
+                        </h1>
+                    </div>
+                
+                </section>
+        </div>
+
+        <div class="msg-box active" id="msg-box">
+            <h1 class="msg">Please enter a city name</h1>
+            <button class="btn" id="btn">OK</button>
+        </div>
+
+        <footer>
+            <div class="footer-title">
+                Copyright©2023 All rights reserved | Made by 
+                <span class="footer-name">Vishal Singh</span>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
